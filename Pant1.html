@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pant11.css">
+    <script src="pant11.js"></script>
+    <title>Prestamos</title>
+</head>
+<body>
+    <table border>
+        <tr>
+            <td id="Colorcito" colspan="2">Prestamos</td>
+        </tr>
+        <tr>
+            <td colspan="2"><p id="Colorcito">¿Que necesitas?</p></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <select>
+                    <option value="" disabled selected>Tipo de Artículo</option>
+                    <option value="opcion1">Electronica</option>
+                    <option value="opcion2">Ropa</option>
+                    <option value="opcion3">Libros</option>
+                    <option value="opcion3">Herramientas</option>
+                    <option value="opcion3">Muebles</option>
+                    <option value="opcion3">Electrodomesticos</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input placeholder="*Nombre de Articulo" required></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td id="Colorcito" rowspan="2">Fecha y hora de <br> entrega</td>
+            <td><input type="number" pattern="^[0-9]+:[0-9]+$" placeholder="*Fecha" required></td>
+        </tr>
+        <tr>
+            <td><input type="number" pattern="^[0-9]+:[0-9]+$" placeholder="*Hora" required></td>
+        </tr>
+        <tr>
+            <td id="Colorcito" rowspan="2">Fecha y hora de <br> devolucion</td>
+            <td><input type="number" pattern="^[0-9]+:[0-9]+$" placeholder="*Fecha" required></td>
+        </tr>
+        <tr>
+            <td><input type="number" pattern="^[0-9]+:[0-9]+$" placeholder="*Hora" required></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td><button onclick="btncancelar_click()">Cancelar</button></td>
+            <td><button onclick="btnpublicar_click()">Publicar</button></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    background-color: white;
+    text-align: center;
+    align-content: center;
+    font-family: Arial, sans-serif;
+}
+
+#Colorcito {
+    background-color: cornflowerblue;
+    color: white;
+    border-color: black;
+}
+
+table {
+    margin: 0 auto;
+    border-radius: 0%;
+    width: 100%;
+    border-collapse: collapse; /* Elimina los espacios entre celdas */
+}
+
+td {
+    border: 0;
+    padding: 8px; /* Añade espaciado interno */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para inputs y selects */
+input, select {
+    width: 100%; /* Asegura que ocupen todo el ancho de la celda */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    padding: 8px; /* Añade espaciado interno */
+    border-radius: 5%; /* Bordes redondeados */
+}
+
+/* Estilo para el botón */
+button {
+    width: 100%; /* Asegura que los botones ocupen todo el ancho de la celda */
+    padding: 10px; /* Añade espaciado interno */
+    background-color: white;
+    border-color: lightseagreen;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    table, tbody, td, tr {
+        display: block; /* Hace que los elementos de la tabla se comporten como bloques */
+        width: 100%;
+    }
+
+    td {
+        margin-bottom: 10px; /* Añade espacio entre las filas */
+    }
+
+    td[id="Colorcito"] {
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+/* Media query para pantallas medianas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    table {
+        width: 90%; /* Reduce el ancho de la tabla */
+    }
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 1025px) {
+    table {
+        width: 70%; /* Reduce aún más el ancho de la tabla */
+    }
+}
